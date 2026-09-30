@@ -1,0 +1,18 @@
+# data fetched by the reproduction scripts (not redistributed, see NOTICE.md)
+experiments/01-sldbench/harness/sldbench/
+experiments/02-open-data-preregistered/protocol/bench/exp1/data/
+
+# outputs of reproduction runs
+experiments/01-sldbench/harness/results-repro/
+experiments/01-sldbench/harness/results-repro.*.log
+experiments/01-sldbench/results-repro/
+experiments/02-open-data-preregistered/results-repro/
+experiments/02-open-data-preregistered/protocol/bench/results/exp1/
+experiments/02-open-data-preregistered/protocol/bench/results/exp1.*.log
+verify_programs/
+
+# Python and editor noise
+__pycache__/
+*.pyc
+.vscode/
+.idea/

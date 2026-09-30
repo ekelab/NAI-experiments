@@ -1,0 +1,10 @@
+{
+ "moe_scaling_law": [
+  {
+   "target": "loss_validation",
+   "form": "(+ C1.5078420365131433 (* C-1.4164000762219842e-05 (^ (- (log x0) (/ L816 (log x1))) L3)))",
+   "logvars": [],
+   "logy": false
+  }
+ ]
+}

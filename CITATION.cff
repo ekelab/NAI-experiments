@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use these results or materials, please cite them as below."
+title: "NAI (No-Ansatz Inference): experiments and reproduction materials"
+type: dataset
+authors:
+  - family-names: "Smirnov"
+    given-names: "Mikhail"
+    email: "lab@mindscan.org"
+version: "1.0"
+date-released: 2026-09-30
+abstract: >-
+  Experiments with NAI, a symbolic-regression system that infers the functional
+  form of a law from tabular data. Experiment 01: SLDBench, eight scaling-law
+  discovery tasks (mean extrapolation R² 0.706 ± 0.026 over three replicates,
+  without a language model). Experiment 02: a pre-registered test on open
+  scaling-law data never seen by NAI, against the Chinchilla fit, a literature
+  form and the PySR engine (mean R² 0.733 vs −0.412 for the PySR engine).
+  Includes the NAI binary (public build), protocols, results and reproduction scripts.
+keywords:
+  - symbolic regression
+  - scaling laws
+  - extrapolation
+  - pre-registration
+  - reproducibility
+license: CC-BY-4.0

@@ -1,0 +1,2 @@
+task,groups,r2,r2_heldout,human_r2,sldagent_r2,constants,limit,forms_tried,search_seconds,outcomes,form
+moe_scaling_law,1,0.494655,0.746100,0.703,0.773,2,6,41,186,engine,1.5257 + -1.39829e-05*(log(num_experts) - 816/log(dense_parameter_count))^3

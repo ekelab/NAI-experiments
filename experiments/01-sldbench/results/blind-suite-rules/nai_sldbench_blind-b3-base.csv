@@ -1,0 +1,7 @@
+task,groups,r2,r2_heldout,human_r2,sldagent_r2,constants,limit,forms_tried,search_seconds,outcomes,form
+chinchilla,1,0.996560,0.995300,nan,nan,3,5,45,0,engine,3.24461 + 539*log(2)^log(N) + 1662.32*log(2)^log(D) - 0.0112389*log(D)*sqrt(log(N))
+kaplan,3,0.974770,0.995900,nan,nan,1,2,66,0,engine,0.00542683*exp(sqrt(59 - log(N)))
+constrained,1,0.964423,0.972000,nan,nan,5,7,32,0,engine,6.00995 + 4050*0.666436^log(tokens) - 0.144719*(log(params) + sqrt(log(unique_tokens))) + 2.82161e+10*params^(-sqrt(2)) + 377596*exp(sqrt(log(tokens)) - log(unique_tokens))
+lr,1,0.962944,0.958700,nan,nan,4,6,42,0,engine,11.1083 + 8.30308*cos(log(log(N))) + 0.0200017*log(lr)*log(lr) + 0.0104712*log(lr)*log(N)
+moe,1,0.941825,0.983300,nan,nan,3,6,32,0,engine,-1.08161 - 67*(log(num_experts) - 1)/log(dense_parameter_count) + 72.8196*log(num_experts)/(log(dense_parameter_count) + 2) - 0.00743871*exp(sin(log(dense_parameter_count) - log(num_experts)))
+finetune,6,0.998346,0.993800,nan,nan,3,4,188,0,engine,0.279329 + 0.205249*5^(0.915476^log(sft_data_size))

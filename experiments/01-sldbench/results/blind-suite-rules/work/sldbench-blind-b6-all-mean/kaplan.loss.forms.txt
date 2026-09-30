@@ -1,0 +1,4 @@
+form	(* C10.428103855177017 (^ (sqrt (sqrt x0)) (- (log L2) L1)))
+group	books	13.024008771455678
+group	code	10.426142890398479
+group	web	11.595183217187127

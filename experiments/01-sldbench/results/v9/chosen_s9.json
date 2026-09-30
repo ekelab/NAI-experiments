@@ -1,0 +1,90 @@
+{
+ "parallel_scaling_law": [
+  {
+   "target": "loss",
+   "form": "(* C0.10000000000000001 (* (+ L25 (/ x1 (log (sqrt x0)))) (sqrt (/ (sqrt L3) (* (+ x1 L25) (log (log (log (log x0)))))))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "vocab_scaling_law": [
+  {
+   "target": "unigram_normalized_loss",
+   "form": "(- (+ (+ (- (neg C5.2000000000000002) (* C137753415663.19711 (^ x2 (log C0.49298597194388777)))) (* C137730595446.14142 (^ x2 (neg C0.70726495726495731)))) (* C110.63358778625954 (sqrt (/ x1 x2)))) (* C1.6140248356473525e-12 (* x0 (sqrt x1))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "sft_scaling_law": [
+  {
+   "target": "sft_loss",
+   "form": "(/ (* C25.26923076923077 (^ (+ x0 (+ L2 L3)) C17.941211300826655)) (^ (+ x0 (sqrt x0)) C18.185792349726775))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "domain_mixture_scaling_law": [
+  {
+   "target": "loss_domain_1",
+   "form": "(* C3.9521531100478469 (^ C0.71464019851116622 (+ (cos x1) (sqrt (sqrt x0)))))",
+   "logvars": [],
+   "logy": false
+  },
+  {
+   "target": "loss_domain_2",
+   "form": "(+ C3.1704545454545454 (/ (* L4212 (exp (neg x4))) (+ L6965 (* L64476 x1))))",
+   "logvars": [],
+   "logy": false
+  },
+  {
+   "target": "loss_domain_3",
+   "form": "(* (* C4.1602564102564106 (^ C0.82320733652242239 (exp (sqrt (sqrt x2))))) (^ C1.0364963503649636 (+ x3 (exp x0))))",
+   "logvars": [],
+   "logy": false
+  },
+  {
+   "target": "loss_domain_4",
+   "form": "(- C1.7636363636363637 (* C0.13242009132420091 (- (* L6 (sqrt (sqrt x3))) x1)))",
+   "logvars": [],
+   "logy": false
+  },
+  {
+   "target": "loss_domain_5",
+   "form": "(+ C0 (* C1 (sin (* x4 (+ C1.8092045152303411 (sqrt x0))))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "moe_scaling_law": [
+  {
+   "target": "loss_validation",
+   "form": "(+ C1.4944410058132787 (* C1.3922103827915144e-05 (^ (- (/ L823 (log x1)) (log x0)) L3)))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "data_constrained_scaling_law": [
+  {
+   "target": "loss",
+   "form": "(+ (+ (neg L3) (* C137.52355337943567 (^ (log x2) (cos (log (log x1)))))) (* C60427812.306223094 (exp (- (cos (log x2)) (log x0)))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "lr_bsz_scaling_law": [
+  {
+   "target": "lm_loss",
+   "form": "(- (+ (+ (- C2.7507401410700605 (* C6.3227828035683744e-05 (^ (log x2) (log (log x3))))) (* C35.93333333333333 (/ (^ L2 (log x0)) (log x1)))) (* L810560 (exp (- (log x1) (log x2))))) (* C0.059360730593607303 (- (log x0) (sin (sin (log x2))))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "easy_question_scaling_law": [
+  {
+   "target": "brier_score",
+   "form": "(+ C0 (* C1 (* (- (exp (sin C0.61183932119757944)) (/ (cos (exp (sin (exp (+ L1 (/ C0.61183932119757944 x0)))))) C0.61183932119757944)) (sin (cos x0)))))",
+   "logvars": [],
+   "logy": false
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "chinchilla_epoch": [
+  {
+   "target": "loss",
+   "form": "(- (- (+ (+ C1.8181818181818181 (* L30697 (sqrt (exp (neg (log x1)))))) (* L29283 (^ C0.089834515366430265 (sqrt (log x0))))) (* C0.0027318692279380747 (exp (exp (cos (log x1)))))) (* C0.0041841004184100415 (sin (exp (sqrt (log x0))))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "porian_chinchilla": [
+  {
+   "target": "loss",
+   "form": "(- (- C20.418604651162791 (* C0.26477541371158392 (^ (log x0) (neg (sin (sqrt (log x1))))))) (* C2.6898734177215191 (sqrt (+ (log x1) (sin (sin (log x1)))))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "porian_lrbsz": [
+  {
+   "target": "loss",
+   "form": "(* (* (* (* C32.25 (^ C1.0058517045150979 (* (log x0) (log x3)))) (^ C0.17784256559766765 (sqrt (sqrt (log x1))))) (^ C12.342105263157896 (/ (log x1) (log x3)))) (^ C1.008956337103045 (* (log x0) (log x0))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "datadecide": [
+  {
+   "target": "nll",
+   "form": "(+ C0 (* C1 (^ C1.2835475458556581e-06 (cos (exp (sin (sqrt (log x0))))))))",
+   "logvars": [],
+   "logy": false
+  }
+ ]
+}

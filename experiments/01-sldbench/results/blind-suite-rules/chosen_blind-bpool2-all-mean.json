@@ -1,0 +1,50 @@
+{
+ "chinchilla": [
+  {
+   "target": "loss",
+   "form": "(* (* L19653 (^ C0.0077120822622107968 (* (log (log x1)) (log (log (log x0)))))) (^ C1.2218649517684887 (+ (log x0) (* (log x1) (sin L1)))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "kaplan": [
+  {
+   "target": "loss",
+   "form": "(* C10.428103855177017 (^ (sqrt (sqrt x0)) (- (log L2) L1)))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "constrained": [
+  {
+   "target": "loss",
+   "form": "(+ (+ (+ C1.9806926884626066 (* C1818.6546973690224 (^ (log L2) (log x2)))) (* C1556.7467239345419 (^ x1 (cos L2)))) (* L234 (^ (log L2) (log x0))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "lr": [
+  {
+   "target": "loss",
+   "form": "(+ (+ (+ L11 (* C8.1568582437423292 (cos (log (log x1))))) (* C0.020723421888912991 (* (log x0) (log x0)))) (* C0.011045784033476577 (* (log x0) (log x1))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "moe": [
+  {
+   "target": "loss_validation",
+   "form": "(+ (- (neg C1.1417670179224684) (* L68 (/ (- (log x0) L1) (log x1)))) (* C73.8992749820423 (/ (log x0) (+ (log x1) L2))))",
+   "logvars": [],
+   "logy": false
+  }
+ ],
+ "finetune": [
+  {
+   "target": "sft_loss",
+   "form": "(+ C0 (* C1 (^ C0.99933102648922845 (* (log x0) (log x0)))))",
+   "logvars": [],
+   "logy": false
+  }
+ ]
+}

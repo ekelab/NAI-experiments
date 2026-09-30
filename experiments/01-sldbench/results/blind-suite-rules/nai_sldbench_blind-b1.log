@@ -1,0 +1,12 @@
+  chinchilla/loss: 39 forms, chosen: R2 held-out 0.9939, 5 constants: 1.60585 + 366.543*sqrt(0.513284)^log(N) + 73971.8*0.0904675^sqrt(log(D))
+chinchilla                     R2=   0.9985 (held-out  0.9939)  human    nan  SLDAgent    nan  constants 5/5  engine, 56 s
+  kaplan/loss: 77 forms, chosen: R2 held-out 0.9990, 2 constants: 11.4638*0.949069^(log(N)^log(3))
+kaplan                         R2=   0.9965 (held-out  0.9990)  human    nan  SLDAgent    nan  constants 2/2  engine, 98 s
+  constrained/loss: 38 forms, chosen: R2 held-out 0.9613, 3 constants: 2.05397 + 1823*log(2)^log(tokens) + 6582.54*1/sqrt(params) + 241.37*log(2)^log(unique_tokens)
+constrained                    R2=   0.9743 (held-out  0.9613)  human    nan  SLDAgent    nan  constants 3/7  engine, 186 s
+  lr/loss: 41 forms, chosen: R2 held-out 0.9587, 4 constants: 11.1083 + 8.30308*cos(log(log(N))) + 0.0200017*log(lr)*log(lr) + 0.0104712*log(lr)*log(N)
+lr                             R2=   0.9629 (held-out  0.9587)  human    nan  SLDAgent    nan  constants 4/6  engine, 50 s
+  moe/loss_validation: 42 forms, chosen: R2 held-out 0.9833, 3 constants: -1.08161 - 67*(log(num_experts) - 1)/log(dense_parameter_count) + 72.8196*log(num_experts)/(log(dense_parameter_count) + 2) - 0.00743871*exp(sin(log(dense_parameter_count) - log(num_experts)))
+moe                            R2=   0.9418 (held-out  0.9833)  human    nan  SLDAgent    nan  constants 3/6  engine, 48 s
+  finetune/sft_loss: 174 forms, chosen: R2 held-out 0.9961, 3 constants: 0.600728 + 0.37294*0.984112^(log(sft_data_size)*log(sft_data_size))
+finetune                       R2=   0.9994 (held-out  0.9961)  human    nan  SLDAgent    nan  constants 3/4  engine, 183 s

@@ -1,0 +1,3 @@
+form	(* C0.10000000000000001 (* (+ L25 (/ x1 (log (sqrt x0)))) (sqrt (/ (sqrt L3) (* (+ x1 L25) (log (log (log (log x0)))))))))
+group	pile	0.10055193707483437
+group	stack	0.055632456581649066

@@ -1,0 +1,80 @@
+{
+ "chinchilla": {
+  "features": [
+   "N",
+   "D"
+  ],
+  "targets": [
+   "loss"
+  ],
+  "extrap": "N",
+  "limit": 5
+ },
+ "kaplan": {
+  "features": [
+   "N"
+  ],
+  "targets": [
+   "loss"
+  ],
+  "extrap": "N",
+  "limit": 2
+ },
+ "constrained": {
+  "features": [
+   "unique_tokens",
+   "params",
+   "tokens"
+  ],
+  "targets": [
+   "loss"
+  ],
+  "extrap": "params",
+  "limit": 7
+ },
+ "lr": {
+  "features": [
+   "lr",
+   "N"
+  ],
+  "targets": [
+   "loss"
+  ],
+  "extrap": "N",
+  "limit": 6
+ },
+ "moe": {
+  "features": [
+   "num_experts",
+   "dense_parameter_count"
+  ],
+  "targets": [
+   "loss_validation"
+  ],
+  "extrap": "dense_parameter_count",
+  "limit": 6
+ },
+ "finetune": {
+  "features": [
+   "sft_data_size"
+  ],
+  "targets": [
+   "sft_loss"
+  ],
+  "extrap": "sft_data_size",
+  "limit": 4
+ },
+ "lrbsz": {
+  "features": [
+   "lr",
+   "bsz",
+   "data_size",
+   "N"
+  ],
+  "targets": [
+   "loss"
+  ],
+  "extrap": "N",
+  "limit": 10
+ }
+}

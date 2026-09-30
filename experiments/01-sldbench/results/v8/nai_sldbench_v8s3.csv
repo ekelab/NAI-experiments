@@ -1,0 +1,9 @@
+task,groups,r2,r2_heldout,human_r2,sldagent_r2,constants,limit,forms_tried,search_seconds,outcomes,form
+parallel_scaling_law,2,0.992544,0.997500,1.0,1.0,2,4,35,52,engine,3.30433 + 3131*1/sqrt(num_params) - 0.0663001*log(num_params*parallel_size)
+vocab_scaling_law,1,0.985642,0.985900,0.966,0.987,2,7,42,944,engine,-5.48545 + 37174*sqrt(log(vocab_size)/num_characters) - 3.11389e+07*num_characters^sin(cos(3))
+sft_scaling_law,42,0.984941,0.977600,0.957,0.993,4,4,1280,1968,engine,4.42136*0.999827^(log(sft_data_size)^3.2652)*1.00401^exp(sin(log(sft_data_size)))
+domain_mixture_scaling_law,4,0.988064,0.997260,0.671,0.988,3,7,466,627,engine,3.91033 + -0.861959*(cos(proportion_domain_2) + sqrt(sqrt(proportion_domain_1))) | 3.16499 + 3341*exp(-proportion_domain_5)/(5432 + 49858*proportion_domain_2) | 3.22939*0.766265^sqrt(sqrt(proportion_domain_3))*1.05908^(proportion_domain_1 + proportion_domain_4) | 2.82345 + -0.867881*(cos(proportion_domain_2) + sqrt(sin(sqrt(proportion_domain_4)))) | 3.06 + 0.531206*0.0567307^(proportion_domain_5^cos(sqrt(proportion_domain_1)))
+moe_scaling_law,1,-1.000000,nan,0.703,0.773,0,6,0,105,engine,
+data_constrained_scaling_law,1,0.873953,0.799200,0.911,0.944,3,7,43,584,engine,-12176.5 + 12185.7*exp(3/sqrt(tokens)) - 0.202331*log(params*sqrt(unique_tokens))
+lr_bsz_scaling_law,1,0.393433,0.942600,-0.076,0.604,4,10,34,1349,engine,3.95439 - 0.0135464*log(data_size)^log(sqrt(log(non_embedding_param_size))) + 763887*exp(log(bsz) - log(data_size)) + 4*1.20119^(log(lr)*log(bsz)) + 0.043982*(sin(log(data_size)) - cos(log(lr)))
+easy_question_scaling_law,9,0.026513,0.927300,-1.0,-0.305,3,6,150,150,engine,16.9242 + -17.4673*1.01063^(-log_flops)

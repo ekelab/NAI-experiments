@@ -1,0 +1,66 @@
+{
+ "chinchilla_epoch": {
+  "features": [
+   "N",
+   "D"
+  ],
+  "targets": [
+   "loss"
+  ],
+  "extrap": "N",
+  "limit": 7,
+  "monotone": [
+   "N",
+   "D"
+  ],
+  "note": "Epoch AI reconstruction of Chinchilla (N, D \u2192 loss); test N > 2e9"
+ },
+ "porian_chinchilla": {
+  "features": [
+   "N",
+   "D"
+  ],
+  "targets": [
+   "loss"
+  ],
+  "extrap": "N",
+  "limit": 7,
+  "monotone": [
+   "N",
+   "D"
+  ],
+  "note": "Porian et al. cosine-decay runs, RefinedWeb and OpenWebText2 (groups); test N >= 2.8e8"
+ },
+ "porian_lrbsz": {
+  "features": [
+   "lr",
+   "bsz",
+   "D",
+   "N"
+  ],
+  "targets": [
+   "loss"
+  ],
+  "extrap": "N",
+  "limit": 10,
+  "monotone": [
+   "D",
+   "N"
+  ],
+  "note": "Porian et al. lr x batch sweep; test: the largest width"
+ },
+ "datadecide": {
+  "features": [
+   "N"
+  ],
+  "targets": [
+   "nll"
+  ],
+  "extrap": "N",
+  "limit": 6,
+  "monotone": [
+   "N"
+  ],
+  "note": "DataDecide: OLMES-10 mean -ln(correct_prob_per_char) vs model size, 25 corpora (groups); test: 1B"
+ }
+}

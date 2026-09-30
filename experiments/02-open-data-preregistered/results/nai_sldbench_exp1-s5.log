@@ -1,0 +1,8 @@
+  chinchilla_epoch/loss: 32 forms, chosen: R2 held-out 0.9835, 3 constants: 1.81127 + 247.167*N^log(sqrt(cos(1))) + 7235*D^cos(exp(0.69851))
+chinchilla_epoch               R2=   0.8412 (held-out  0.9835)  human    nan  SLDAgent    nan  constants 3/7  engine, 94 s
+  porian_chinchilla/loss: 95 forms, chosen: R2 held-out 0.9498, 4 constants: 9.36407*0.99221^(log(N)*log(D))*0.988265^(log(N)*sin(log(D)))*1.11726^(log(N) + sin(log(D)))
+porian_chinchilla              R2=   0.8877 (held-out  0.9498)  human    nan  SLDAgent    nan  constants 4/7  engine, 77 s
+  porian_lrbsz/loss: 40 forms, chosen: R2 held-out 0.5911, 2 constants: 13.1505*1.3333^(log(bsz) - sqrt(log(bsz)*log(N)))
+porian_lrbsz                   R2=   0.6052 (held-out  0.5911)  human    nan  SLDAgent    nan  constants 2/10  engine, 838 s
+  datadecide/nll: 717 forms, chosen: R2 held-out 0.8180, 3 constants: -0.1211 + 0.0685916*0.83283^(log(N)/(3 - sqrt(log(N))))
+datadecide                     R2=   0.7736 (held-out  0.8180)  human    nan  SLDAgent    nan  constants 3/6  engine, 991 s

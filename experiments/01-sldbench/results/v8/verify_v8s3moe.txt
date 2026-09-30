@@ -1,0 +1,2 @@
+moe_scaling_law                upstream evaluator R2    0.4947   ours    0.4947
+mean over 1 tasks: 0.4947

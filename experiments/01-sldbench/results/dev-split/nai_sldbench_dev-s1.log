@@ -1,0 +1,20 @@
+  parallel_scaling_law/loss: 25 forms, chosen: R2 held-out 0.9989, 1 constants: 150/log(num_params)^1.42352
+parallel_scaling_law           R2=   0.9949 (held-out  0.9989)  human  1.000  SLDAgent  1.000  constants 1/4  engine, 45 s
+  vocab_scaling_law/unigram_normalized_loss: 45 forms, chosen: R2 held-out 0.8142, 3 constants: 69 + 72.2907*cos(log(log(num_characters)*0.853772)) - 13754*sin(log(log(num_characters)))/vocab_size - 0.103392*(log(non_vocab_parameters) + exp(-cos(log(num_characters))))
+vocab_scaling_law              R2=   0.9743 (held-out  0.8142)  human  0.966  SLDAgent  0.987  constants 3/7  engine, 434 s
+  sft_scaling_law/sft_loss: 1154 forms, chosen: R2 held-out 0.9812, 3 constants: 4.55834*0.988884^(sft_data_size^0.343211)
+sft_scaling_law                R2=   0.7658 (held-out  0.9812)  human  0.957  SLDAgent  0.993  constants 3/4  engine, 1188 s
+  domain_mixture_scaling_law/loss_domain_1: 78 forms, chosen: R2 held-out 0.9975, 2 constants: 4.23536*0.723567^(cos(proportion_domain_2) + sqrt(sqrt(proportion_domain_1)))
+  domain_mixture_scaling_law/loss_domain_2: 91 forms, chosen: R2 held-out 0.9971, 5 constants: 5.87322 - 1.13998*(cos(proportion_domain_4) + sqrt(cos(sin(cos(-1.5708))) + cos(proportion_domain_1 - proportion_domain_3) - 0.112365^(0.150235 + proportion_domain_2^cos(sqrt(sin(proportion_domain_5))))))
+  domain_mixture_scaling_law/loss_domain_3: 84 forms, chosen: R2 held-out 0.9947, 2 constants: 1.1614 + 2.09843*(proportion_domain_3 - proportion_domain_5/27)^proportion_domain_3
+  domain_mixture_scaling_law/loss_domain_4: 68 forms, chosen: R2 held-out 0.9977, 2 constants: 12.7245*0.107095^sin(sqrt(proportion_domain_4) + cos(proportion_domain_2))
+  domain_mixture_scaling_law/loss_domain_5: 73 forms, chosen: R2 held-out 0.9942, 2 constants: 3.8056 + -0.810346*sin(proportion_domain_4 + proportion_domain_5^sqrt(proportion_domain_4))
+domain_mixture_scaling_law     R2=   0.9869 (held-out  0.9962)  human  0.671  SLDAgent  0.988  constants 5/7  engine, 457 s
+  moe_scaling_law/loss_validation: 39 forms, chosen: R2 held-out 0.9337, 3 constants: 10.9095*(2 + exp(3)^(exp(3)/(log(dense_parameter_count)*log((num_experts + 2 - log(num_experts))/dense_parameter_count^log(0.343095))))) - 31.904
+moe_scaling_law                R2=   0.6507 (held-out  0.9337)  human  0.703  SLDAgent  0.773  constants 3/6  engine, 59 s
+  data_constrained_scaling_law/loss: 46 forms, chosen: R2 held-out 0.4902, 1 constants: 2 + 16.4744*log(log(log(tokens)))^(1 - log(params))
+data_constrained_scaling_law   R2=  -0.0156 (held-out  0.4902)  human  0.911  SLDAgent  0.944  constants 1/7  engine, 285 s
+  lr_bsz_scaling_law/lm_loss: 37 forms, chosen: R2 held-out 0.9314, 4 constants: 6.45427 - 0.129051*log(non_embedding_param_size*sqrt(data_size)) + 780438*(bsz + 283)/data_size + 60.7925*sqrt(lr)/bsz - 13.3028*lr*cos(log(lr))
+lr_bsz_scaling_law             R2=   0.8949 (held-out  0.9314)  human -0.076  SLDAgent  0.604  constants 4/10  engine, 1170 s
+  easy_question_scaling_law/brier_score: 157 forms, chosen: R2 held-out 0.9153, 3 constants: -0.193049 + -0.566369*0.654625^(3^log_flops)
+easy_question_scaling_law      R2=   0.9238 (held-out  0.9153)  human -1.000  SLDAgent -0.305  constants 3/6  engine, 113 s

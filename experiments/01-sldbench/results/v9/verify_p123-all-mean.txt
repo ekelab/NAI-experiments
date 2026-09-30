@@ -1,0 +1,9 @@
+parallel_scaling_law           upstream evaluator R2    0.9934   ours    0.9934
+vocab_scaling_law              upstream evaluator R2    0.9663   ours    0.9663
+sft_scaling_law                upstream evaluator R2    0.9849   ours    0.9849
+domain_mixture_scaling_law     upstream evaluator R2    0.9918   ours    0.9918
+moe_scaling_law                upstream evaluator R2    0.6906   ours    0.6906
+data_constrained_scaling_law   upstream evaluator R2    0.6636   ours    0.6636
+lr_bsz_scaling_law             upstream evaluator R2    0.4997   ours    0.4997
+easy_question_scaling_law      upstream evaluator R2    0.0265   ours    0.0265
+mean over 8 tasks: 0.7271

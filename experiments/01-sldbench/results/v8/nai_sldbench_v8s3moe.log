@@ -1,0 +1,2 @@
+  moe_scaling_law/loss_validation: 41 forms, chosen: R2 held-out 0.7461, 2 constants: 1.5257 + -1.39829e-05*(log(num_experts) - 816/log(dense_parameter_count))^3
+moe_scaling_law                R2=   0.4947 (held-out  0.7461)  human  0.703  SLDAgent  0.773  constants 2/6  engine, 186 s

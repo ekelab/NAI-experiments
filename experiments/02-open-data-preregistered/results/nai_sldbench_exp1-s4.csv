@@ -1,0 +1,5 @@
+task,groups,r2,r2_heldout,human_r2,sldagent_r2,constants,limit,forms_tried,search_seconds,outcomes,form
+chinchilla_epoch,1,0.844654,0.979400,nan,nan,3,7,41,136,engine,24.6368 - 22.5546*cos(sin(log(log(N)))) + 5945.03*D^cos(2)
+porian_chinchilla,2,0.541084,0.927200,nan,nan,3,7,93,73,engine,27.3024 - 0.245552*log(N)^(-sin(sqrt(log(D)))) - 6.4071*log(log(D) + sin(sin(log(D))))
+porian_lrbsz,1,0.497917,0.603900,nan,nan,4,10,41,867,engine,255*2.83802^(log(bsz)/(log(lr) + log(N)))*0.321508^sqrt(exp(log(lr)/log(bsz)))*0.96102^(log(lr) + log(D))/(sqrt(log(D)) - log(lr))^1.46227
+datadecide,25,0.720618,0.813800,nan,nan,3,6,735,917,engine,-1.18354 + 419.172*0.0029864^cos(exp(sin(sqrt(log(N)))))

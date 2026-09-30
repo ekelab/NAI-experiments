@@ -1,0 +1,2 @@
+form	(+ L2 (* C16.173333333333332 (^ (log (log (log x2))) (- L1 (log x1)))))
+group	all_data	16.474434517863777

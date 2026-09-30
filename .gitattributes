@@ -1,0 +1,4 @@
+# Every file is stored byte for byte, with no line-ending conversion, so that
+# results and predictions can be compared byte for byte on any system.
+* -text
+*.exe binary
